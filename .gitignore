@@ -1,0 +1,6 @@
+/.ollama
+/.redhat
+/bin
+/lib
+/test_database.db
+/update_ollama.sh

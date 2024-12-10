@@ -1,0 +1,24 @@
+# Configuration for the multi-agent system
+
+# Logging configuration
+logging:
+  version: 1
+  disable_existing_loggers: false
+  formatters:
+    simple:
+      format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  handlers:
+    console:
+      class: logging.StreamHandler
+      level: INFO
+      formatter: simple
+      stream: ext://sys.stdout
+  loggers:
+    example_logger:
+      level: INFO
+      handlers: [console]
+      propagate: false
+
+# Database configuration
+database:
+  url: 'sqlite:///advanced_historical_data.db'
